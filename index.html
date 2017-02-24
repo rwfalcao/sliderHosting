@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sliders</title>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/calculadora.css">
+  <link rel="stylesheet" href="css/customizacao.css">
+  <link rel="stylesheet" href="css/pixeden-icons.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/css/bootstrap-slider.css" />
+  <script src="https://use.fontawesome.com/0b1e6817ad.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div id="simulador">
+    <h3 class="text-center titulo-caracteristicas-comercializacao"> <i id="simTitle" class="fa fa-calculator margin-r" aria-hidden="true"></i> Simule seu Hosting</h3>
+    <p style="text-align: center;">Utilize a calculadora abaixo para simular configurações e seus respectivos preços para sua máquina virtual: </p>
+    <div class="container">
+      <div class="row">
+        <div id="grupoSliders" class="col-md-8">
+          <div id="processadorSlider" class="componente">
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="strong">Processador <span id="descProcessador" class="hidden">Quantidade de processadores</span></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <input id="processador" name="processadorName" type="number" onchange="processadorOutputId.value=outputProcessador()" /> </div>
+              <div class="col-sm-4 precoParcial"> <span id="processadorCurrentSliderValLabel"><span id="processadorliderVal"><output name="processadorOutput" id="processadorOutputId">2 CPUs</output></span><span class="valor">(R$ <span class="processador">383,14</span>)</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="memoriaSlider" class="componente">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="strong">RAM <span id="descMemoria" class="hidden">Quantidade de memória</span></div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <input id="memoria" name="memoriaName" type="number" onchange="memoriaOutputId.value=ouputMemoria()" /> </div>
+              <div class="col-sm-4 precoParcial"> <span id="memoriaCurrentSliderValLabel"><span id="memorialiderVal"><output name="memoriaOutput" id="memoriaOutputId">2 GBs</output></span><span class="valor">(R$ <span class="memoria">47,58</span>)</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="discoSlider" class="componente">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="strong">Disco <span id="descDisco" class="hidden">Espaço em disco</span></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <input id="disco" name="discoName" type="number" onchange="discoOutputId.value=discoValorUnidade()" /> </div>
+              <div class="col-sm-4 precoParcial"> <span id="discoCurrentSliderValLabel"><span id="discoliderVal"><output name="discoOutput" id="discoOutputId">50 GB</output></span><span class="valor">(R$ <span class="disco">0</span>)</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="bandaSlider" class="componente">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="strong">Banda <span id="descBanda" class="hidden">Banda contratada</span></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <input id="banda" name="bandaName" data-slider-id='bandaSlider' type="text" data-provide="slider" data-slider-ticks='[1, 2, 3]' data-slider-ticks-labels='["25 Mbps", "50 Mbps", "100 Mbps"]' data-slider-min='1' data-slider-max='3' data-slider-step='1'
+                  data-slider-value='1' data-slider-tooltip='hide' labelledby='["25 Mbps", "50 Mbps", "100 Mbps"]' onchange="bandaOutputId.value=valorBanda()" /> </div>
+              <div class="col-sm-4 precoParcial"> <span id="bandaCurrentSliderValLabel"><span id="bandaliderVal"><output name="bandaOutput" id="bandaOutputId">25</output> Mbps </span><span class="valor">(R$ <span class="banda">4289,49</span>)</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="soTotal" class="col-md-4 col-sm-12">
+          <div id="sisOperacional" class="text-center col-md-12 col-sm-6">
+            <div class="sistemasOp">Sistemas Operacionais</div>
+            <ul id="sisOperacionais">
+              <li>Debian 7</li>
+              <li>Debian 8</li>
+              <li>Red Hat Enterprise Linux (RHEL) 6</li>
+              <li>Red Hat Enterprise Linux (RHEL) 8</li>
+              <li>Microsoft Windows Server 2008 Enterprise</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-sm-6">
+            <div id="total">
+              <h3 class="text-center margin-no">Total</h3>
+              <div id="preco" class="preco text-center h5 pad-sm-t" style="display: block;"> <span id="valorTotal">R$ <span class="total">5101,35</span></span><span class="mes"> /mês</span> </div>
+            </div><a id="contactButton" tabindex="0" role="button" class="btn btn-success">Entre em Contato</a> </div>
+        </div>
+      </div>
+      <div id="formHosting" class="row display-none">
+        <form class="form-inline" method="post">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <label for="myname"></label>
+              <input class="dadosPessoais" required="required" type="text" name="myname" id="myname" placeholder="Seu Nome"> </div>
+            <div class="col-md-6">
+              <label for="myemail"></label>
+              <input class="dadosPessoais" required="required" type="text" name="myemail" id="myemail" placeholder="E-mail"> </div>
+            <div id="textboxHosting" class="col-md-12">
+              <textarea name="mymessage" id="mymessageHosting" class="form-control textarea-box" placeholder="Sua Mensagem"></textarea>
+            </div>
+            <div id="hostingButtons" class="col-md-12 flex-container">
+              <div class="no-padding text-center">
+                <input value="Cancelar" tabindex="0" class="btn btn-lg btn-hosting" type="button">
+                <input value="Enviar" tabindex="0" class="btn btn-success btn-lg btn-hosting" type="button"> </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/bootstrap-slider.js"></script>
+  <script src="js/calculadora.js"></script>
+</body>
+
+</html>

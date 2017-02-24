@@ -1,0 +1,523 @@
+div
+{
+	overflow: initial;
+}
+
+#simulador
+{
+	line-height: 28px;
+
+	padding-bottom: 70px;
+}
+
+#simulador > div.container
+{
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+#memoriaSlider .slider-selection,
+#discoSlider .slider-selection,
+#processadorSlider .slider-selection,
+#bandaSlider .slider-selection
+{
+	background: rgba(6, 59, 106, .5);
+}
+
+
+#memoriaSlider .slider-handle,
+#discoSlider .slider-handle,
+#processadorSlider .slider-handle,
+#bandaSlider .slider-handle
+{
+	background: rgba(6, 59, 106, 1);
+}
+
+#memoriaSlider .slider-track-high,
+#discoSlider .slider-track-high,
+#processadorSlider .slider-track-high,
+#bandaSlider .slider-track-high
+{
+	background: #f0f0f0;
+}
+
+#memorialiderVal,
+#discoliderVal,
+#processadorliderVal,
+#bandaliderVal
+{
+	font-size: 20px;
+
+	color: rgba(6, 59, 106, 1);
+}
+
+#simulador > div.container
+{
+	margin-top: 50px;
+}
+
+.componente
+{
+  overflow: auto;
+  width: 100%;
+}
+
+.sr-span{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+
+
+output
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+
+	color: rgba(6, 59, 106, 1);
+}
+
+span.valor
+{
+	font-size: 13px;
+
+	margin-left: 13px;
+}
+
+span#valorTotal
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.slider-handle.round
+{
+	border-radius: 31% !important;
+}
+
+.slider-horizontal
+{
+	width: 100% !important;
+}
+
+.slider.slider-horizontal .slider-track
+{
+	height: 7px !important;
+}
+
+.slider-handle
+{
+	top: .7px !important;
+
+	width: 15px !important;
+	height: 15px !important;
+}
+
+.h2
+{
+	font-size: 2.4em!important;
+}
+
+.margin-md-b
+{
+	margin-bottom: 40px!important;
+}
+
+.margin-r
+{
+	margin-right: 15px!important;
+}
+
+#simTitle
+{
+	color: #5a5a5a !important;
+}
+
+.pad-md
+{
+	padding: 40px!important;
+}
+
+.strong
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+
+	display: inline;
+
+	margin-bottom: 12px;
+	margin-left: -10px;
+
+	color: #777;
+}
+
+output
+{
+	display: inline;
+}
+
+.pull-right
+{
+	float: right!important;
+}
+
+.margin-sm-b
+{
+	margin-bottom: 10px!important;
+}
+
+.pad-md-t
+{
+	padding-top: 40px!important;
+}
+
+.margin-no
+{
+	margin: 0 !important;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+hr.alt
+{
+	border-top: 1px dashed #d4d4d4;
+	border-bottom: 1px dashed #fff;
+}
+
+.margin-v
+{
+	margin-top: 15px!important;
+	margin-bottom: 15px!important;
+}
+
+.h5
+{
+	font-size: 1.4em!important;
+}
+
+.mes
+{
+	font-size: 15px !important;
+}
+
+.slider-tick.round.in-selection
+{
+	width: 15px !important;
+	height: 15px !important;
+
+	background: rgba(88, 117, 141, 1) !important;
+}
+
+.slider-tick-label
+{
+	font-size: 13px;
+}
+
+.slider-tick.round
+{
+	width: 18px !important;
+	height: 18px !important;
+
+	border-radius: 31% !important;
+}
+
+select option[disabled]:first-child
+{
+	display: none;
+}
+
+.hidden
+{
+	position: absolute;
+	top: -20em;
+	left: -200em;
+}
+
+.display-none
+{
+	display: none;
+}
+
+span.cifrao
+{
+	font-size: 37.4px !important;
+}
+
+#total
+{
+	max-width: 262px;
+	margin: 0 auto;
+	padding-top: 15px !important;
+	padding-bottom: 25px!important;
+}
+
+
+
+div#preco > span:nth-child(1)
+{
+	font-size: 45px;
+
+	color: rgba(6, 59, 106, 1);
+}
+
+.slider-tick-label-container > .slider-tick-label:nth-child(1){
+  padding-left: 25px;
+}
+
+#grupoSliders > div.componente:nth-child(n+2){
+  margin-top: 10px;
+}
+
+span.valor > span
+{
+	font-size: inherit;
+}
+
+span.total
+{
+	font-size: inherit;
+}
+
+
+
+#total > h4
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+}
+
+
+
+.sistemasOp
+{
+	font-size: 17px;
+
+	width: 65%;
+	margin: 0 auto;
+	padding: 5px;
+
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.sistemasOp > h4{
+  font-size: inherit;
+  margin-bottom: 0;
+}
+
+
+#sisOperacionais
+{
+	margin-top: 13px;
+	margin-left: 50px;
+}
+
+#sisOperacionais > li
+{
+	font-size: 12px;
+	font-weight: 600;
+
+	margin-bottom: -5px;
+
+	text-align: left;
+}
+
+#soTotal
+{
+	text-align: center;
+}
+
+#mymessageHosting
+{
+	width: 100%;
+	min-height: 200px;
+}
+
+#textboxHosting
+{
+	padding-top: 30px !important;
+}
+
+.flex-container
+{
+	display: -webkit-box;
+	display:	-moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display:     	flex;
+
+	-webkit-justify-content: flex-end;
+   	-moz-justify-content: flex-end;
+    	-ms-justify-content: flex-end;
+        	justify-content: flex-end;
+}
+
+.negativeMarginLeft
+{
+	margin-left: -100px;
+}
+
+.no-padding
+{
+	padding: 0 !important;
+}
+
+form.form-inline
+{
+	overflow: auto;
+}
+
+#formHosting input[type=text],
+#mymessageHosting
+{
+	font-size: 14px;
+
+	width: 100%;
+	padding: 9px;
+
+	border: 1px solid rgba(0,0,0,.3);
+	border-radius: 5px;
+}
+
+#formHosting > form > div.col-md-10
+{
+	display: block;
+	float: none;
+
+	margin: 0 auto;
+}
+
+input[type='button']
+{
+	margin: 5px !important;
+}
+
+input[value='Enviar']
+{
+	width: 20%;
+	min-width: 146.84px;
+
+	border-color: #398439 !important;
+	/*! color: #fff !important; */
+	background-color: #47a447 !important;
+}
+
+input[value='Enviar']:hover
+{
+	background-color: #378137 !important;;
+}
+
+input[value='Cancelar']
+{
+	width: 20%;
+	min-width: 146.84px;
+	margin-left: 0;
+
+	background-color: rgba(115, 115, 115, .7) !important;
+}
+
+input[value='Cancelar']:hover
+{
+	color: #fff !important;
+	background-color: rgba(115, 115, 115, 1) !important;
+}
+
+#grupoSliders .componente
+{
+	margin-left: 15px;
+}
+
+#formHosting input[type=text]
+{
+	min-height: 46px;
+}
+
+.btn-hosting
+{
+	width: 70%;
+	margin: 15px auto;
+	padding: 19px 28px;
+}
+
+
+@media (max-width: 992px)
+{
+	#sisOperacional
+	{
+    	margin-top: 50px;
+	}
+	.slider-tick-label
+	{
+    	display: none !important;
+	}
+
+	#total
+	{
+    	padding-top: 50px !important;
+	}
+
+	#hostingButtons > div
+	{
+    	float: none;
+
+    	margin: 0 auto;
+	}
+
+	#hostingButtons > div > input
+	{
+    	display: inline-block;
+    	float: none;
+	}
+}
+
+@media(max-width: 767px)
+{
+	#sisOperacional
+	{
+    	max-width: 350px;
+    	margin: 0 auto;
+    	margin-top: 50px;
+	}
+
+	.precoParcial
+	{
+    	width: 100% !important;
+
+    	text-align: center !important;
+	}
+
+
+	#hostingButtons > div > input
+	{
+    	display: inline;
+    	float: none;
+
+    	width: 50%;
+    	margin: 10px 0;
+	}
+
+	#grupoSliders {
+   	overflow: auto;
+	}
+}
+
+@media(max-width: 400px)
+{
+	div#preco > span:nth-child(1)
+	{
+    	font-size: 29px;
+	}
+
+	#hostingButtons > div > input
+	{
+    	display: inline;
+    	float: none;
+
+    	width: 100%;
+    	margin: 10px 0;
+	}
+}
